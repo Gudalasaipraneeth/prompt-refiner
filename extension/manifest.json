@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Prompt Refiner",
+  "version": "0.1.0",
+  "description": "Refine prompts in any textarea using Gemini and best practices.",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content.js"]
+    }
+  ],
+  "action": {
+    "default_title": "Prompt Refiner"
+  }
+} 

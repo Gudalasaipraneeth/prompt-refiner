@@ -1,0 +1,27 @@
+{
+  "name": "free-ai-prompt-refiner",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "core",
+    "extension"
+  ],
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.5.0"
+  },
+  "dependencies": {
+    "@google-cloud/aiplatform": "^4.2.0"
+  }
+}
